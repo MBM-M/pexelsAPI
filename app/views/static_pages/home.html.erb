@@ -1,31 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pexels Featured Collections</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; }
-    h1 { text-align: center; }
-    .collection { margin: 20px 0; border: 1px solid #ddd; padding: 10px; border-radius: 5px; }
-    .collection img { max-width: 100%; height: auto; border-radius: 5px; }
-    .collection-name { font-weight: bold; font-size: 1.2em; margin: 10px 0; }
-    .collection-description { font-style: italic; }
-  </style>
-</head>
-<body>
+<h1>Pexels Featured Collections</h1>
 
-  <h1>Pexels Featured Collections</h1>
+<%= form_with url: root_path, method: :get, local: true do %>
+  <div>
+    <%= label_tag :collection_id, "Collection ID:" %>
+    <%= text_field_tag :collection_id, params[:collection_id], placeholder: "e.g. 12345" %>
+    <%= submit_tag "Load Collection" %>
+  </div>
+<% end %>
 
-  <div class="collections">
-    <% @collections.each do |collection| %>
-      <div class="collection">
-        <!-- Accessing cover photo from JSON structure -->
-        <img src="<%= collection['cover_photo']['src']['original'] %>" alt="<%= collection['title'] %>">
+<% if @photos.present? %>
+  <div class="photo-grid">
+    <% @photos.each do |photo| %>
+      <div class="photo-card">
+        <img src="<%= photo.src['medium'] %>" alt="Photo <%= photo.id %>">
       </div>
     <% end %>
   </div>
-
-</body>
-</html>
-
+<% elsif params[:collection_id].present? %>
+  <p>No photos found for Collection ID <%= params[:collection_id] %>.</p>
+<% end %>
