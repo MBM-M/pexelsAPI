@@ -8,3 +8,23 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ /* app/assets/stylesheets/custom.css */
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.photo-card {
+  flex: 1 0 21%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: auto;
+}
