@@ -49,6 +49,6 @@ This project demonstrates how to integrate the [Pexels API](https://www.pexels.c
 
 ## 🔍 Usage
 
-- Enter a collection id in the search bar.< br / >Ex: For, www.pexels.com/collections/collectionTitle-collectionID/, the ID would be: collectionID
+- Enter a collection id in the search bar.<br/>Ex: For, www.pexels.com/collections/collectionTitle-collectionID/, the ID would be: collectionID
 
 - Click "Search" to fetch and display images from Pexels.
