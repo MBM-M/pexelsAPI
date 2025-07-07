@@ -23,24 +23,27 @@ This project demonstrates how to integrate the [Pexels API](https://www.pexels.c
   ```bash
   git clone https://github.com/your-username/pexels-api-rails.git
   cd pexels-api-rails
+  ```
 
-2. **Install dependencies**
-
+2. **Install dependencies:**
   ```bash
   bundle install
+  ```
 
-3. **Sut up environment variables**
+3. **Sut up environment variables:**
 
   Create a .env file in the root directory and add your Pexels API key:
   ```bash
   PEXELS_API_KEY= "your_pexels_api_key_here"
+  ```
    
-4. **Start the Rails server**
+4. **Start the Rails server:**
 
   ```bash
   rails server
+  ```
 
-5. **Visit the app**
+5. **Visit the app:**
   
   Open your browser and go to http://localhost:3000
 
