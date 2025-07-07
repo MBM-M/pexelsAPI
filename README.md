@@ -32,7 +32,7 @@ This project demonstrates how to integrate the [Pexels API](https://www.pexels.c
 
 3. **Sut up environment variables:**
 
-  Create a .env file in the root directory and add your Pexels API key:
+  - Create a .env file in the root directory and add your Pexels API key:
   ```bash
   PEXELS_API_KEY= "your_pexels_api_key_here"
   ```
