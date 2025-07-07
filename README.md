@@ -45,7 +45,7 @@ This project demonstrates how to integrate the [Pexels API](https://www.pexels.c
 
 5. **Visit the app:**
   
-  Open your browser and go to http://localhost:3000
+  - Open your browser and go to http://localhost:3000
 
 ## 🔍 Usage
 
